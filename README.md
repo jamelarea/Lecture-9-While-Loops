@@ -68,7 +68,7 @@ SLIDE 11, Alternative to Previous Break Solution
         while (cin.fail()) {
             cout << "Invalid input.\nPlease enter a valid age:" << endl;
             cin.clear();
-            cin.ignore(1000, '\n'); //1000 is the limit
+            cin.ignore(1000, '\n'); //its going to ignore the string of characters 1000 times then next line
             cin >> age;
         }
         cout << "Your age is: " << age;
