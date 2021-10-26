@@ -55,7 +55,7 @@ SLIDE 11, Alternative to Previous Break Solution
         }
     }
     
-  SLIDE 12, While Loop Error Check Example
+SLIDE 12, While Loop Error Check Example
   
     #include <iostream>
     using namespace std;
@@ -137,4 +137,76 @@ SLIDE 18, Login While Alternative
         }
         cout << "\nWelcome to the super secure banking area" << endl;
     }
+
+EXERCISE BREAK
+
+SLIDE 20, Reverse 9 times table
+
+    #include <iostream>
+    using namespace std;
     
+    int main()
+    {
+        int num = 108; //declare and initialise variable
+
+        while (num > 0) { //while conditional check
+            //code to output then decrease number
+            cout << num << endl;
+            num -= 9;
+        }
+        cin.get(); //keeps console window open in Visual Studio
+        return 0;
+    }
+    
+SLIDE 21, The Pointless Box
+    
+    #include <iostream>
+    using namespace std;
+    
+    int main()
+    {
+        //variables
+        int num = 1 || 2; //integer is equals to 1 or 2
+
+        cout << "Enter a number between 1 and 2: "; cin >> num;
+
+        while (num > 0) //while conditional check
+        {
+            if (num == 1)
+            {
+                cout << "\nYou have entered the number 1" << endl;
+                cout << "Enter a number between 1 and 2: "; cin >> num;
+            }
+            if (num == 2)
+            {
+                cout << "\nYou have entered the number 2" << endl;
+                cout << "Enter a number between 1 and 2: "; cin >> num;
+            }
+            else
+            {
+                break;
+            }
+        }
+            cout << "\nIncorrect input." << endl;
+            cin.get(); //keeps console window open in Visual Studio
+            return 0;
+        }
+        
+SLIDE 22, Input Improvement
+
+    #include <iostream>
+    using namespace std;
+    
+    int main()
+    {
+        //variable
+        char input;
+
+        do { //'do' will execute the code block once, before checking if the condition is true
+            cout << "Would you like to quit (Y/N)? "; //character output
+            cin >> input; //character input
+
+        } while ((input != 'Y') && (input != 'y')); //while conditional check
+        //loop will stop when user inputs Y
+        return 0;
+    }
