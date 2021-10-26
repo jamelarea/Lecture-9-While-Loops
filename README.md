@@ -111,7 +111,7 @@ SLIDE 17, Login Do While Example
             //then it will repeat the loop as long as the condition is true
             cout << "Enter your Password: ";
             cin >> userInput;
-        } while (password != userInput); //while the inputted password is not equal to the password
+        } while (password != userInput); //userInput does not have the same value
 
         cout << "\nWelcome to the super secure banking area" << endl;
     }
@@ -131,7 +131,7 @@ SLIDE 18, Login While Alternative
         cout << "Enter your password: " << endl;
         cin >> userInput;
 
-        while (password != userInput) { //while the inputted password is not equal to the password "1234password"
+        while (password != userInput) { //userInput does not have the same value
             cout << "Enter your password: " << endl; //it will show this same character output again
             cin >> userInput; //character input
         }
